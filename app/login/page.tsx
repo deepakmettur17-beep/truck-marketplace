@@ -46,21 +46,21 @@ export default function LoginPage(){
     }
 
     const { data: profile } = await supabase
-    .from("profiles")
-    .select("*")
-    .eq("id", user.id)
-    .single()
-  
-  if (!profile) {
-    alert("Profile not found")
-    return
-  }
-  
-  if (profile.role === "driver") {
-    router.push("/driver")
-  } else if (profile.role === "shipper") {
-    router.push("/shipper")
-  }
+      .from("profiles")
+      .select("*")
+      .eq("id", data.user?.id)
+      .single()
+
+    if (!profile) {
+      alert("Profile not found")
+      return
+    }
+
+    if (profile.role === "driver") {
+      router.push("/driver")
+    } else if (profile.role === "shipper") {
+      router.push("/shipper")
+    }
 
   }
 
