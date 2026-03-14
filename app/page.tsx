@@ -3,7 +3,7 @@ export default function Home() {
     <div style={{padding:40}}>
       <h1>Truck Marketplace</h1>
 
-      <p>Welcome to the logistics platform</p>
+      <p>Logistics load bidding platform</p>
 
       <a href="/login">Login</a>
       <br/><br/>
