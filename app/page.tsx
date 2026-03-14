@@ -3,15 +3,13 @@ export default function Home() {
     <div style={{padding:40}}>
       <h1>Truck Marketplace</h1>
 
-      <p>Logistics load bidding platform</p>
-
       <a href="/login">Login</a>
       <br/><br/>
 
-      <a href="/shipper">Shipper Dashboard</a>
+      <a href="/driver">Driver</a>
       <br/><br/>
 
-      <a href="/driver">Driver Dashboard</a>
+      <a href="/shipper">Shipper</a>
     </div>
   )
 }
