@@ -51,9 +51,9 @@ export default function LoginPage(){
       .eq("id",data.user.id)
       .single()
 
-    if(profile.role === "driver"){
-      router.push("/driver")
-    }
+      if(profile && profile.role === "driver"){
+        router.push("/driver")
+      }
 
     if(profile.role === "shipper"){
       router.push("/shipper")
